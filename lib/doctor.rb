@@ -1,3 +1,5 @@
+require 'pry'
+
 class Doctor 
   attr_reader :name 
   @@all = [] 
@@ -22,6 +24,8 @@ class Doctor
   def patients
     self.appointments.map { |apt| apt.patient }
   end
+  
+  bindin.pry 
   
   
 end 
