@@ -25,5 +25,4 @@ class Doctor
     self.appointments.map { |apt| apt.patient }
   end
   
-  binding.pry 
 end 
