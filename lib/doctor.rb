@@ -19,9 +19,9 @@ class Doctor
   
   def new_appointment (patient,date)
     Appointment.new(date patient,self) 
-    
-    binding.pry 
   end 
+  
+  binding.pry 
   
   def patients
     self.appointments.map { |apt| apt.patient }
