@@ -13,7 +13,7 @@ class Patient
     Appointment.all.select { |apt| apt.Patient == self } 
   end
   
-  def Patient.all 
+  def self.all 
     
   end
   
