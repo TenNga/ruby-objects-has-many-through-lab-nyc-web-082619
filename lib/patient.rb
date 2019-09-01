@@ -10,11 +10,11 @@ class Patient
   end
   
   def appointments 
-    
+    Appointment.all.select { |apt| apt.Patient == self } 
   end
   
   def Patient.all 
-    Appointment.all.select { |apt| apt.Patient == self } 
+    
   end
   
 end
