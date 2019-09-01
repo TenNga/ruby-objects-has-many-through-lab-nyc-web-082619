@@ -14,7 +14,7 @@ class Patient
   end
   
   def self.all 
-    
+    Appointment.all.map { |apt| apt.patient }
   end
   
 end
