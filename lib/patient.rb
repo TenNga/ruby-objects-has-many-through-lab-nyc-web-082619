@@ -16,7 +16,7 @@ class Patient
   end
   
   def doctors 
-    Appointment.all.select { |apt| apt.
+    appointments.map { |apt| apt.doctor }
   end 
   
   def self.all 
