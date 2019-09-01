@@ -9,4 +9,8 @@ class Patient
     Appointment.new(date, self, doctor)
   end
   
+  def Patient.all 
+    Appointment.all.select { |apt| apt.Patient == self } 
+  end
+  
 end
